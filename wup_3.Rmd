@@ -1,7 +1,7 @@
 ---
 title: "Alcohol vs Seat choice"
 author: "Jessica Villa"
-date: "Summer 2022."
+date: "Summer 2022"
 output: html_document
 ---
 
