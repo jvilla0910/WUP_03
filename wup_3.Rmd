@@ -40,6 +40,7 @@ basicCN + geom_boxplot(notch=TRUE,outlier.color = "red") + stat_boxplot(geom ='e
 
 By looking at the box plots it appears that the people in the back row are drinking more heavily than those individuals who sit in either the front or middle rows. The middle of the back row is drinking more then the 75th percentile of either the front or back row. The variability in the back row is bigger than the either front or the back row. This is represented by the wedges in the box plot or standard deviation. 
 
+
 ## Numerical Summarys 
 
 ```{r}
