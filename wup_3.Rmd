@@ -65,4 +65,4 @@ There is a significant difference between drinks consumed by the people in the b
 
 ## Conclusions
 
-
+I reject the null hypothesis. There is a significant difference between at Least two rows the front and back row. The p-value is 0.000116 whuch is less than 0.05. It appears that when comparing at least two rows, the front and the back, the back row is drinking more then the the 75th percentile of the front row.
