@@ -62,6 +62,7 @@ plot(TukeyHSD(modell))
 ```
 There is a significant difference between drinks consumed by the people in the back row when compared to the front row. When we subtract the drinks consumed by the back row versus the front row we get a negative number. The individuals in the back row are drinking more than the people on the front.The p-value is 0.000116. However, there is no evidence that there is a difference between the middle row and the front row. One of the numbers is zero.
 
+
 ## Conclusions
 
 
