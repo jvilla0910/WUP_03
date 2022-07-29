@@ -1,7 +1,7 @@
 ---
 title: "Alcohol vs Seat choice"
-author: "Jessica Villa"
-date: "Summer 2022."
+author: "Jessica Villa."
+date: "Summer 2022"
 output: html_document
 ---
 
@@ -17,6 +17,10 @@ davisdata <- read.csv(file="UCDavis.csv")
 ## Our Goal is to answer this question Is there a difference between the alcohol consumed between the row
 ## you choose to sit in??
 
+$H_o$: There is no difference between the average number of drinks imbibed between people conditioned on the row they sit in.  
+
+$H_a$: The average number drinks is different between at least two rows.
+
 ## Now with ggplot - first select the basic data
 
 ```{r}
@@ -28,16 +32,33 @@ basicCN <- ggplot(davisdata,aes(y=alcohol,x=Seat))
 basicCN + geom_boxplot()
 ```
   
-  
 ### get fancy  
 
 ```{r}
 basicCN + geom_boxplot(notch=TRUE,outlier.color = "red") + stat_boxplot(geom ='errorbar') + labs(title="Fancy notch boxplot \n with 2 lines")
 ```
 
+By looking at the box plots it appears that the people in the back row are drinking more heavily than those individuals who sit in either the front or middle rows. The middle of the back row is drinking more then the 75th percentile of either the front or back row. The variability in the back row is bigger than the either front or the back row. This is represented by the wedges in the box plot or standard deviation. 
+
 ## Numerical Summarys 
 
+```{r}
+favstats(alcohol~Seat, data=davisdata)
+```
+
+The back row average is 9.6 which is much bigger than the averages for the front 1.8 and the middle 3.2. The majority of people are sitting in the middle section. However, the majority of people sitting in the back section are drinking 3x more than the middle 9x more than the front. 
+
 ## Inferential Tests
+
+```{r}
+modell <- aov(alcohol~Seat, data=davisdata)
+summary.aov(modell)
+```
+
+```{r}
+plot(TukeyHSD(modell))
+```
+There is a significant difference between drinks consumed by the people in the back row when compared to the front row. When we subtract the drinks consumed by the back row versus the front row we get a negative number. The individuals in the back row are drinking more than the people on the front.The p-value is 0.000116. However, there is no evidence that there is a difference between the middle row and the front row. One of the numbers is zero.
 
 ## Conclusions
 
