@@ -49,6 +49,7 @@ favstats(alcohol~Seat, data=davisdata)
 
 The back row average is 9.6 which is much bigger than the averages for the front 1.8 and the middle 3.2. The majority of people are sitting in the middle section. However, the majority of people sitting in the back section are drinking 3x more than the middle 9x more than the front. 
 
+
 ## Inferential Tests
 
 ```{r}
