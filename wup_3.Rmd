@@ -65,4 +65,5 @@ There is a significant difference between drinks consumed by the people in the b
 
 ## Conclusions
 
-I reject the null hypothesis. There is a significant difference between at Least two rows the front and back row. The p-value is 0.000116 whuch is less than 0.05. It appears that when comparing at least two rows, the front and the back, the back row is drinking more then the the 75th percentile of the front row.
+The seat category and amount of alcohol consumed is different. The back seat median, max, and mean are all greater than the other 2 seats. The median is different by at least 3. The mean is different by at least 6.4. The max is different by at least 35. We rejected the null hypothesis after seeing the results of the AOV. There is clearly a difference. People in the back seat drink the most, people in the middle seat drink the 2nd most, and people in the front seat drink the least.
+
